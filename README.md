@@ -16,5 +16,6 @@ Following the [GitHub pages guide](https://create-react-app.dev/docs/deployment/
 ```console
 $> npm start #dev
 $> npm test
-$> npm run build #production
+$> npm run build #production build
+$> npm run deploy #push to gh pages
 ```
