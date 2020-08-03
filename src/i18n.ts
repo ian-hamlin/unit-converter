@@ -6,6 +6,8 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      App_Title: "Unit Converter",
+      App_SubTitle: "Convert values from one unit of measure to another.",
       Category_Length: "Length",
       Category_Temp: "Temp",
       Category_Time: "Time",

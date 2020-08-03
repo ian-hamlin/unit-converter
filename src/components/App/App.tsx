@@ -41,6 +41,8 @@ const ConversionRow = (props: { columns: Conversion[] }) => {
 };
 
 const App = () => {
+  const { t, i18n } = useTranslation();
+
   // Load the arary from the local json conversions file.
   const conversions: Conversion[] = [...conversionData];
   const chunks: Conversion[][] = chunkArray(conversions, lg_size);
@@ -55,10 +57,8 @@ const App = () => {
           width="72"
           height="72"
         />
-        <h2>Unit Converter</h2>
-        <p className="lead">
-          Convert values from one unit of measure to another.
-        </p>
+        <h2>{t("App_Title")}</h2>
+        <p className="lead">{t("App_SubTitle")}</p>
       </div>
       {chunks.map((chunk, idx) => (
         <ConversionRow key={idx} columns={chunk} />
