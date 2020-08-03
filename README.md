@@ -20,6 +20,7 @@ $> npm start #dev
 $> npm test
 $> npm run build #production build
 $> npm run deploy #push to gh pages
+$> npm install react-i18next i18next --save
 ```
 
 ## Dependencies Used
@@ -27,10 +28,8 @@ $> npm run deploy #push to gh pages
 - gh-pages
 - typescript
 - react-bootstrap
-- eslint
-- prettier
+- react-i18next
 
 ## ToDo
 
 - [ ] Routing (with hash for gh pages?)
-- [ ] Internationalization
