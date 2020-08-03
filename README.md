@@ -7,6 +7,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ```console
 $> npx create-react-app react-unit-converter --template typescript
 $> npm install --save react-router-dom
+$> npm install --save bootstrap
+$> npm install react-bootstrap 
 ```
 
 Following the [GitHub pages guide](https://create-react-app.dev/docs/deployment/#github-pages)
@@ -19,3 +21,14 @@ $> npm test
 $> npm run build #production build
 $> npm run deploy #push to gh pages
 ```
+
+## Dependencies Used
+
+- gh-pages
+- typescript
+- react-bootstrap
+
+## ToDo
+
+- [ ] Routing (with hash for gh pages?)
+- [ ] Internationalization
