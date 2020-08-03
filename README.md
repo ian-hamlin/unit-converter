@@ -8,7 +8,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 $> npx create-react-app react-unit-converter --template typescript
 $> npm install --save react-router-dom
 $> npm install --save bootstrap
-$> npm install react-bootstrap 
+$> npm install react-bootstrap
 ```
 
 Following the [GitHub pages guide](https://create-react-app.dev/docs/deployment/#github-pages)
@@ -27,6 +27,8 @@ $> npm run deploy #push to gh pages
 - gh-pages
 - typescript
 - react-bootstrap
+- eslint
+- prettier
 
 ## ToDo
 
