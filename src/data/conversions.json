@@ -1,34 +1,42 @@
 [
   {
     "category": "Category_Length",
+    "icon": "/unit-converter/img/icons8-ruler-64.png",
     "sort": 1
   },
   {
     "category": "Category_Temp",
+    "icon": "/unit-converter/img/icons8-temperature-64.png",
     "sort": 2
   },
   {
     "category": "Category_Time",
+    "icon": "/unit-converter/img/icons8-clock-64.png",
     "sort": 3
   },
   {
     "category": "Category_Volume",
+    "icon": "/unit-converter/img/icons8-volume-64.png",
     "sort": 4
   },
   {
     "category": "Category_Weight",
+    "icon": "/unit-converter/img/icons8-weight-kg-64.png",
     "sort": 5
   },
   {
     "category": "Category_Angle",
+    "icon": "/unit-converter/img/icons8-trigonometry-64.png",
     "sort": 6
   },
   {
     "category": "Category_Area",
+    "icon": "/unit-converter/img/icons8-pi-64.png",
     "sort": 7
   },
   {
     "category": "Category_Speed",
+    "icon": "/unit-converter/img/icons8-speed-64.png",
     "sort": 8
   }
 ]

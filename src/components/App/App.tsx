@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import Media from "react-bootstrap/Media";
 import { chunkArray } from "../../utils";
 import conversionData from "../../data/conversions.json";
 import Conversion from "../../types/Conversion";
@@ -11,19 +12,30 @@ import { useTranslation } from "react-i18next";
 
 const xs_size: number = 1;
 const md_size: number = 2;
-const lg_size: number = 2;
+const lg_size: number = 4;
 
-const ConversionCard = (props: { category: string }) => {
+const ConversionCard = (props: { category: string; icon_url: string }) => {
   const { t, i18n } = useTranslation();
 
   return (
     <Col>
       <Card border="success" className="mb-3">
         <Card.Body>
-          <Card.Title>{t(props.category)}</Card.Title>
-          <Button className="stretched-link" variant="success">
-            {t(props.category)}
-          </Button>
+          <Media>
+            <img
+              width={64}
+              height={64}
+              className="align-self-start mr-3"
+              src={props.icon_url}
+              alt={t(props.category)}
+            />
+            <Media.Body>
+              <h5>{t(props.category)}</h5>
+              <Button className="stretched-link" variant="success">
+                {t(props.category)}
+              </Button>
+            </Media.Body>
+          </Media>
         </Card.Body>
       </Card>
     </Col>
@@ -33,8 +45,12 @@ const ConversionCard = (props: { category: string }) => {
 const ConversionRow = (props: { columns: Conversion[] }) => {
   return (
     <Row xs={xs_size} md={md_size} lg={lg_size}>
-      {props.columns.map((column) => (
-        <ConversionCard key={column.category} category={column.category} />
+      {props.columns.map((conversion) => (
+        <ConversionCard
+          key={conversion.category}
+          category={conversion.category}
+          icon_url={conversion.icon}
+        />
       ))}
     </Row>
   );
@@ -63,6 +79,10 @@ const App = () => {
       {chunks.map((chunk, idx) => (
         <ConversionRow key={idx} columns={chunk} />
       ))}
+      icons by{" "}
+      <a target="_blank" href="https://icons8.com">
+        Icons8
+      </a>
     </Container>
   );
 };
