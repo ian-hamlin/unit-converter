@@ -7,19 +7,22 @@ import Card from "react-bootstrap/Card";
 import { chunkArray } from "../../utils";
 import conversionData from "../../data/conversions.json";
 import Conversion from "../../types/Conversion";
+import { useTranslation } from "react-i18next";
 
 const xs_size: number = 1;
 const md_size: number = 2;
 const lg_size: number = 2;
 
 const ConversionCard = (props: { category: string }) => {
+  const { t, i18n } = useTranslation();
+
   return (
     <Col>
       <Card border="success" className="mb-3">
         <Card.Body>
-          <Card.Title>{props.category}</Card.Title>
+          <Card.Title>{t(props.category)}</Card.Title>
           <Button className="stretched-link" variant="success">
-            {props.category}
+            {t(props.category)}
           </Button>
         </Card.Body>
       </Card>
