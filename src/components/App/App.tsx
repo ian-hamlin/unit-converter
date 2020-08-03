@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <Container className="p-3">
-      <div className="py-5 text-center">
+      <div className="text-center">
         <img
           className="d-block mx-auto mb-4"
           src="/unit-converter/android-chrome-192x192.png"
