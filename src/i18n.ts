@@ -11,7 +11,7 @@ const resources = {
       Category_Length: "Length",
       Category_Temp: "Temp",
       Category_Time: "Time",
-      Category_Volumne: "Volumne",
+      Category_Volume: "Volume",
       Category_Weight: "Weight",
       Category_Angle: "Angle",
       Category_Area: "Area",

@@ -1,34 +1,34 @@
 [
-    {
-        "category": "Category_Length",
-        "sort": 1
-    },
-    {
-        "category": "Category_Temp",
-        "sort": 2
-    },
-    {
-        "category": "Category_Time",
-        "sort": 3
-    },
-    {
-        "category": "Category_Volumne",
-        "sort": 4
-    },
-    {
-        "category": "Category_Weight",
-        "sort": 5
-    },
-    {
-        "category": "Category_Angle",
-        "sort": 6
-    },
-    {
-        "category": "Category_Area",
-        "sort": 7
-    },
-    {
-        "category": "Category_Speed",
-        "sort": 8
-    }
+  {
+    "category": "Category_Length",
+    "sort": 1
+  },
+  {
+    "category": "Category_Temp",
+    "sort": 2
+  },
+  {
+    "category": "Category_Time",
+    "sort": 3
+  },
+  {
+    "category": "Category_Volume",
+    "sort": 4
+  },
+  {
+    "category": "Category_Weight",
+    "sort": 5
+  },
+  {
+    "category": "Category_Angle",
+    "sort": 6
+  },
+  {
+    "category": "Category_Area",
+    "sort": 7
+  },
+  {
+    "category": "Category_Speed",
+    "sort": 8
+  }
 ]
