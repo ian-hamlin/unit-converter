@@ -53,6 +53,9 @@ const App = () => {
 
   // Load the arary from the local json conversions file.
   const conversions: Conversion[] = [...conversionData];
+  conversions.sort((a, b) => {
+    return a.sort - b.sort;
+  });
   const chunks: Conversion[][] = chunkArray(conversions, lg_size);
 
   return (
