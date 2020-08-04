@@ -12,7 +12,7 @@ import { useTranslation } from "react-i18next";
 
 const xs_size: number = 1;
 const sm_size: number = 2;
-const md_size: number = 3;
+const md_size: number = 2;
 const lg_size: number = 4;
 
 const ConversionCard = (props: { category: string; icon_url: string }) => {
@@ -21,21 +21,14 @@ const ConversionCard = (props: { category: string; icon_url: string }) => {
   return (
     <Col>
       <Card border="success" className="mb-3">
-        <Card.Body>
-          <Media>
-            <img
-              width={64}
-              height={64}
-              className="align-self-start mr-3"
-              src={props.icon_url}
-              alt={t(props.category)}
-            />
-            <Media.Body>
-              <Button className="stretched-link" variant="success">
-                {t(props.category)}
-              </Button>
-            </Media.Body>
-          </Media>
+        {/* <Card.Img variant="top" src={props.icon_url} /> */}
+        <Card.Title className="text-center mb-0 mt-1">
+          <img src={props.icon_url} />
+        </Card.Title>
+        <Card.Body className="text-center">
+          <Button className="stretched-link" variant="success">
+            {t(props.category)}
+          </Button>
         </Card.Body>
       </Card>
     </Col>
