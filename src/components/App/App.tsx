@@ -11,7 +11,8 @@ import Conversion from "../../types/Conversion";
 import { useTranslation } from "react-i18next";
 
 const xs_size: number = 1;
-const md_size: number = 2;
+const sm_size: number = 2;
+const md_size: number = 3;
 const lg_size: number = 4;
 
 const ConversionCard = (props: { category: string; icon_url: string }) => {
@@ -30,7 +31,6 @@ const ConversionCard = (props: { category: string; icon_url: string }) => {
               alt={t(props.category)}
             />
             <Media.Body>
-              <h5>{t(props.category)}</h5>
               <Button className="stretched-link" variant="success">
                 {t(props.category)}
               </Button>
@@ -44,7 +44,7 @@ const ConversionCard = (props: { category: string; icon_url: string }) => {
 
 const ConversionRow = (props: { columns: Conversion[] }) => {
   return (
-    <Row xs={xs_size} md={md_size} lg={lg_size}>
+    <Row xs={xs_size} sm={sm_size} md={md_size} lg={lg_size}>
       {props.columns.map((conversion) => (
         <ConversionCard
           key={conversion.category}
