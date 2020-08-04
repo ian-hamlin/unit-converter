@@ -19,7 +19,7 @@ const ConversionCard = (props: { category: string; icon_url: string }) => {
 
   return (
     <Col>
-      <Card border="success" className="mb-3">
+      <Card className="mb-3">
         {/* <Card.Img variant="top" src={props.icon_url} /> */}
         <Card.Title className="text-center mb-0 mt-1">
           <img src={props.icon_url} />
@@ -74,6 +74,10 @@ const App = () => {
       icons by{" "}
       <a target="_blank" href="https://icons8.com">
         Icons8
+      </a>
+      , source code on{" "}
+      <a target="_blank" href="https://github.com/ian-hamlin/unit-converter">
+        GitHub
       </a>
     </Container>
   );
