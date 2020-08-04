@@ -15,14 +15,14 @@ const md_size: number = 2;
 const lg_size: number = 4;
 
 const ConversionCard = (props: { category: string; icon_url: string }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Col>
       <Card className="mb-3">
         {/* <Card.Img variant="top" src={props.icon_url} /> */}
         <Card.Title className="text-center mb-0 mt-1">
-          <img src={props.icon_url} />
+          <img src={props.icon_url} alt={t(props.category)} />
         </Card.Title>
         <Card.Body className="text-center">
           <Button className="stretched-link" variant="success">
@@ -49,7 +49,7 @@ const ConversionRow = (props: { columns: Conversion[] }) => {
 };
 
 const App = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   // Load the arary from the local json conversions file.
   const conversions: Conversion[] = [...conversionData];
@@ -72,11 +72,15 @@ const App = () => {
         <ConversionRow key={idx} columns={chunk} />
       ))}
       icons by{" "}
-      <a target="_blank" href="https://icons8.com">
+      <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">
         Icons8
       </a>
       , source code on{" "}
-      <a target="_blank" href="https://github.com/ian-hamlin/unit-converter">
+      <a
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://github.com/ian-hamlin/unit-converter"
+      >
         GitHub
       </a>
     </Container>
