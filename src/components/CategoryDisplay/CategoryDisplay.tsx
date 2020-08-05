@@ -61,8 +61,6 @@ const ConversionRow = (props: { columns: Conversion[] }) => {
 };
 
 const CategoryDisplay = () => {
-  const { t } = useTranslation();
-
   // Load the arary from the local json conversions file.
   const conversions: Conversion[] = [...conversionData];
   conversions.sort((a, b) => {
