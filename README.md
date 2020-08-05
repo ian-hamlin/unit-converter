@@ -34,3 +34,4 @@ $> npm run deploy #push to gh pages
 ## ToDo
 
 - [ ] Routing (with hash for gh pages?)
+- [ ] Not found if conversion type is wrong
