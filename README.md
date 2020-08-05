@@ -10,6 +10,7 @@ $> npm install --save react-router-dom
 $> npm install --save bootstrap
 $> npm install react-bootstrap
 $> npm install react-i18next i18next --save
+$> react-helmet-async
 ```
 
 Following the [GitHub pages guide](https://create-react-app.dev/docs/deployment/#github-pages)

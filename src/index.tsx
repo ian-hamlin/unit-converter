@@ -3,10 +3,13 @@ import ReactDOM from "react-dom";
 import * as serviceWorker from "./serviceWorker";
 import "./i18n";
 import App from "./components/App/App";
+import { HelmetProvider } from "react-helmet-async";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
