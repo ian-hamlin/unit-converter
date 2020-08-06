@@ -4,12 +4,16 @@ import { useTranslation } from "react-i18next";
 import CategoryDisplay from "../CategoryDisplay/CategoryDisplay";
 import ConversionDisplay from "../ConversionDisplay/ConversionDisplay";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const App = () => {
   const { t } = useTranslation();
 
   return (
     <Container className="p-3">
+      <Helmet>
+        <title>Unit Converter</title>
+      </Helmet>
       <div className="text-center">
         <img
           className="d-block mx-auto mb-4"
