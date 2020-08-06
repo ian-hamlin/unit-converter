@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import conversionData from "../../data/conversions.json";
 import Conversion from "../../types/Conversion";
 import { useTranslation } from "react-i18next";
+import NotFound from "../NotFound/NotFound";
 
 const ConversionDetail = (id: string) => {
   const conversions: Conversion[] = [...conversionData];
@@ -22,13 +23,22 @@ const ConversionDisplay = (props: any) => {
   const detail = ConversionDetail(match.params.id);
 
   if (detail === null) {
-    return <></>;
+    return (
+      <>
+        <Helmet>
+          <title>404 - {t("App_Title")}</title>
+        </Helmet>
+        <NotFound />
+      </>
+    );
   }
 
   return (
     <>
       <Helmet>
-        <title>{t(detail.category)} - Unit Converter</title>
+        <title>
+          {t(detail.category)} - {t("App_Title")}
+        </title>
       </Helmet>
       <div>{t(detail.category)}</div>
     </>

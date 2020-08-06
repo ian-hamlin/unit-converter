@@ -33,5 +33,5 @@ $> npm run deploy #push to gh pages
 
 ## ToDo
 
-- [ ] Routing - can't link to page, need the 404 workaround
-- [ ] Not found if conversion type is wrong
+- [ ] Not found if conversion type is wrong (go home button)
+- [ ] Conversion page

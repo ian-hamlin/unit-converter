@@ -12,7 +12,7 @@ const App = () => {
   return (
     <Container className="p-3">
       <Helmet>
-        <title>Unit Converter</title>
+        <title>{t("App_Title")}</title>
       </Helmet>
       <div className="text-center">
         <img
