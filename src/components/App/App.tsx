@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import { useTranslation } from "react-i18next";
 import CategoryDisplay from "../CategoryDisplay/CategoryDisplay";
 import ConversionDisplay from "../ConversionDisplay/ConversionDisplay";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 
 const App = () => {
   const { t } = useTranslation();
