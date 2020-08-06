@@ -21,7 +21,7 @@ const App = () => {
         <h2>{t("App_Title")}</h2>
         <p className="lead">{t("App_SubTitle")}</p>
       </div>
-      <Router basename="/unit-converter">
+      <Router>
         <Switch>
           <Route
             path="/:id"
