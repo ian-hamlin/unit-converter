@@ -1,8 +1,9 @@
 import React from "react";
+import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import conversionData from "../../data/conversions_v2.json";
 import Conversion from "../../types/Conversion";
-import { useTranslation } from "react-i18next";
 import NotFound from "../NotFound/NotFound";
 
 const ConversionDetail = (id: string) => {
@@ -40,7 +41,49 @@ const ConversionDisplay = (props: any) => {
           {t(detail.category)} - {t("App_Title")}
         </title>
       </Helmet>
-      <div>{t(detail.category)}</div>
+      <Row>
+        <Col className="text-center">
+        {t(detail.category)}
+        </Col>
+      </Row>            
+      <Row xs="1" sm="1" md="3" lg="3">
+        <Col className="text-right">
+                    <InputGroup className="mb-3">
+            <InputGroup.Prepend>
+              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_From")}</InputGroup.Text>
+            </InputGroup.Prepend>
+<Form.Control as="select" custom>
+      {detail.units.map((unit) => (
+        <option value={unit.resourceName}>{t(unit.resourceName)}</option>
+      ))}
+    </Form.Control>
+          </InputGroup>
+        </Col>
+        <Col className="text-center">
+          <InputGroup className="mb-3">
+            <InputGroup.Prepend>
+              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
+        </Col>
+        <Col className="text-left">
+<InputGroup className="mb-3">
+            <InputGroup.Prepend>
+              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_To")}</InputGroup.Text>
+            </InputGroup.Prepend>
+<Form.Control as="select" custom>
+      {detail.units.map((unit) => (
+        <option value={unit.resourceName}>{t(unit.resourceName)}</option>
+      ))}
+    </Form.Control>
+          </InputGroup>
+
+        </Col>
+      </Row>
     </>
   );
 };

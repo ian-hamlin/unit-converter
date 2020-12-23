@@ -1,10 +1,10 @@
 import React from "react";
-import { Button, Row, Col, Card } from "react-bootstrap";
-import { chunkArray } from "../../utils";
-import conversionData from "../../data/conversions_v2.json";
-import Conversion from "../../types/Conversion";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
+import conversionData from "../../data/conversions_v2.json";
+import Conversion from "../../types/Conversion";
+import { chunkArray } from "../../utils";
 
 /* Some sizes to break the grid on */
 const xs_size: number = 2;

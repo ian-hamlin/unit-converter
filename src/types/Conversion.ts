@@ -3,6 +3,14 @@ export interface Conversion {
   icon: string;
   sort: number;
   slug: string;
+  units: Unit[];
+}
+
+export interface Unit {
+  resourceName:string;
+  multiplier: number;
+  offset: number;
+  formulaInvert: boolean;
 }
 
 export default Conversion;
