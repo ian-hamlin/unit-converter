@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Row, Col, Card } from "react-bootstrap";
 import { chunkArray } from "../../utils";
-import conversionData from "../../data/conversions.json";
+import conversionData from "../../data/conversions_v2.json";
 import Conversion from "../../types/Conversion";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";

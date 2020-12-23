@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import conversionData from "../../data/conversions.json";
+import conversionData from "../../data/conversions_v2.json";
 import Conversion from "../../types/Conversion";
 import { useTranslation } from "react-i18next";
 import NotFound from "../NotFound/NotFound";
