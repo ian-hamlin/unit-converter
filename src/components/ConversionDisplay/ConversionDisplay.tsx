@@ -53,33 +53,31 @@ const ConversionDisplay = (props: any) => {
         </Col>
       </Row>            
       <Row xs="1" sm="1" md="3" lg="3">
-        <Col className="text-right">
-                    <InputGroup className="mb-3">
+        <Col>
+          <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_From")}</InputGroup.Text>
             </InputGroup.Prepend>
-<Form.Control as="select" custom defaultValue={sourceUnit} onChange={(e) => setSourceUnit(e.currentTarget.value)}>
-      {detail.units.map((unit) => (
-        <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
-      ))}
-    </Form.Control>
+            <Form.Control as="select" custom defaultValue={sourceUnit} onChange={(e) => setSourceUnit(e.currentTarget.value)}>
+              {detail.units.map((unit) => (
+                <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
+              ))}
+            </Form.Control>
           </InputGroup>
         </Col>
-        <Col className="text-center">
-
-<InputGroup className="mb-3">
+        <Col>
+          <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_To")}</InputGroup.Text>
             </InputGroup.Prepend>
-<Form.Control as="select" custom defaultValue={targetUnit} onChange={(e) => setTargetUnit(e.currentTarget.value)}>
-      {detail.units.map((unit) => (
-        <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
-      ))}
-    </Form.Control>
+            <Form.Control as="select" custom defaultValue={targetUnit} onChange={(e) => setTargetUnit(e.currentTarget.value)}>
+                {detail.units.map((unit) => (
+                  <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
+                ))}
+            </Form.Control>
           </InputGroup>
-
         </Col>
-                <Col className="text-left">
+        <Col>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
@@ -93,7 +91,7 @@ const ConversionDisplay = (props: any) => {
       </Row>
       <Row>
         <Col className="text-center">
-        <h4>{t("Convert_Result")}:</h4>
+          <h4>{t("Convert_Result")}:</h4>
         </Col>
       </Row>        
     </>
