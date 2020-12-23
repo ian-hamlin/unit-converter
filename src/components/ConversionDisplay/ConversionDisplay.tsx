@@ -83,6 +83,7 @@ const ConversionDisplay = (props: any) => {
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
+              inputMode="decimal"
               aria-label="Default"
               aria-describedby="inputGroup-sizing-default"
             />
