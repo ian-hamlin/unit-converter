@@ -49,7 +49,7 @@ const ConversionDisplay = (props: any) => {
       </Helmet>
       <Row>
         <Col className="text-center">
-        <h3>{t(detail.category)} {t("Header_Conversions")}</h3>
+        <h3>{t(`${detail.category}_Header`)}</h3>
         </Col>
       </Row>            
       <Row xs="1" sm="1" md="3" lg="3">
