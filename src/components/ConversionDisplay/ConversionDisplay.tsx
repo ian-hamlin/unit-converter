@@ -24,10 +24,10 @@ const ConversionDisplay = (props: any) => {
   const detail = ConversionDetail(match.params.id);
 
   // Default the "from" to the first element.
-  const [fromUnit, setFromUnit] = useState<string>(detail?.units[0].resourceName ?? "");
+  const [sourceUnit, setSourceUnit] = useState<string>(detail?.units[0].resourceName ?? "");
 
   // Default the "to" to the first element that is not the "from" element. Assumes we always have 2=>
-  const [toUnit, setToUnit] = useState<string>(detail?.units.filter((unit) => unit.resourceName !== fromUnit)[0].resourceName ?? "");
+  const [targetUnit, setTargetUnit] = useState<string>(detail?.units.filter((unit) => unit.resourceName !== sourceUnit)[0].resourceName ?? "");
 
   if (detail === null || detail.units.length <= 1) {
     return (
@@ -58,7 +58,7 @@ const ConversionDisplay = (props: any) => {
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_From")}</InputGroup.Text>
             </InputGroup.Prepend>
-<Form.Control as="select" custom defaultValue={fromUnit} onChange={(e) => setFromUnit(e.currentTarget.value)}>
+<Form.Control as="select" custom defaultValue={sourceUnit} onChange={(e) => setSourceUnit(e.currentTarget.value)}>
       {detail.units.map((unit) => (
         <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
       ))}
@@ -71,7 +71,7 @@ const ConversionDisplay = (props: any) => {
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_To")}</InputGroup.Text>
             </InputGroup.Prepend>
-<Form.Control as="select" custom defaultValue={toUnit} onChange={(e) => setToUnit(e.currentTarget.value)}>
+<Form.Control as="select" custom defaultValue={targetUnit} onChange={(e) => setTargetUnit(e.currentTarget.value)}>
       {detail.units.map((unit) => (
         <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
       ))}
