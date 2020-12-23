@@ -5,55 +5,55 @@
     "sort": 1,
     "slug": "length",
     "units": [
-        {
-          "resourceName": "Units_Length_Inches",
-          "multiplier": 0.08333333333333333,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Feet",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Yards",
-          "multiplier": 3,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Miles",
-          "multiplier": 5280,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Millimeters",
-          "multiplier": 0.00328083989,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Centimeters",
-          "multiplier": 0.0328083989,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Meters",
-          "multiplier": 3.28083989,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Length_Kilometers",
-          "multiplier": 3280.83989,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Length_Inches",
+        "multiplier": 0.08333333333333333,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Feet",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Yards",
+        "multiplier": 3,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Miles",
+        "multiplier": 5280,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Millimeters",
+        "multiplier": 0.00328083989,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Centimeters",
+        "multiplier": 0.0328083989,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Meters",
+        "multiplier": 3.28083989,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Length_Kilometers",
+        "multiplier": 3280.83989,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   },
   {
     "category": "UnitGroup_Temp",
@@ -61,25 +61,25 @@
     "sort": 2,
     "slug": "temp",
     "units": [
-        {
-          "resourceName": "Units_Temp_Kelvin",
-          "multiplier": 1,
-          "offset": -273.15,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Temp_Celsius",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Temp_Fahrenheit",
-          "multiplier": 0.55555555555556,
-          "offset": 32,
-          "formulaInvert": true
-        }
-      ]
+      {
+        "resourceName": "Units_Temp_Kelvin",
+        "multiplier": 1,
+        "offset": -273.15,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Temp_Celsius",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Temp_Fahrenheit",
+        "multiplier": 0.55555555555556,
+        "offset": 32,
+        "formulaInvert": true
+      }
+    ]
   },
   {
     "category": "UnitGroup_Speed",
@@ -87,19 +87,19 @@
     "sort": 8,
     "slug": "speed",
     "units": [
-        {
-          "resourceName": "Units_Speed_KilometerPerHour",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Speed_MilesPerHour",
-          "multiplier": 1.609344,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Speed_KilometerPerHour",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Speed_MilesPerHour",
+        "multiplier": 1.609344,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   },
   {
     "category": "UnitGroup_Time",
@@ -107,43 +107,43 @@
     "sort": 3,
     "slug": "time",
     "units": [
-        {
-          "resourceName": "Units_Time_Milliseconds",
-          "multiplier": 0.001,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Time_Seconds",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Time_Minutes",
-          "multiplier": 60,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Time_Hours",
-          "multiplier": 3600,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Time_Days",
-          "multiplier": 86400,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Time_Years",
-          "multiplier": 31536000,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Time_Milliseconds",
+        "multiplier": 0.001,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Time_Seconds",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Time_Minutes",
+        "multiplier": 60,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Time_Hours",
+        "multiplier": 3600,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Time_Days",
+        "multiplier": 86400,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Time_Years",
+        "multiplier": 31536000,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   },
   {
     "category": "UnitGroup_Volume",
@@ -151,55 +151,55 @@
     "sort": 4,
     "slug": "volume",
     "units": [
-        {
-          "resourceName": "Units_Volume_Ounces",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Imperial_Ounces",
-          "multiplier": 0.96076,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Cups",
-          "multiplier": 8,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Imperial_Pints",
-          "multiplier": 19.215,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Quarts",
-          "multiplier": 32,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Gallons",
-          "multiplier": 128,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Imperial_Gallons",
-          "multiplier": 153.72159046,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Volume_Liters",
-          "multiplier": 33.81402274,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Volume_Ounces",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Imperial_Ounces",
+        "multiplier": 0.96076,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Cups",
+        "multiplier": 8,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Imperial_Pints",
+        "multiplier": 19.215,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Quarts",
+        "multiplier": 32,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Gallons",
+        "multiplier": 128,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Imperial_Gallons",
+        "multiplier": 153.72159046,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Volume_Liters",
+        "multiplier": 33.81402274,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   },
   {
     "category": "UnitGroup_Angle",
@@ -207,19 +207,19 @@
     "sort": 6,
     "slug": "angle",
     "units": [
-        {
-          "resourceName": "Units_Angle_Degrees",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Angle_Radians",
-          "multiplier": 57.29577951,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Angle_Degrees",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Angle_Radians",
+        "multiplier": 57.29577951,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   },
   {
     "category": "UnitGroup_Weight",
@@ -227,49 +227,49 @@
     "sort": 5,
     "slug": "weight",
     "units": [
-        {
-          "resourceName": "Units_Weight_Ounces",
-          "multiplier": 0.0625,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Weight_Pounds",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Weight_Tons",
-          "multiplier": 2000,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Weight_MetricTons",
-          "multiplier": 2204.62262184,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Weight_ImperialTons",
-          "multiplier": 2240,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Weight_Grams",
-          "multiplier": 0.00220462262,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Weight_Kilograms",
-          "multiplier": 2.20462262,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Weight_Ounces",
+        "multiplier": 0.0625,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Weight_Pounds",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Weight_Tons",
+        "multiplier": 2000,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Weight_MetricTons",
+        "multiplier": 2204.62262184,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Weight_ImperialTons",
+        "multiplier": 2240,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Weight_Grams",
+        "multiplier": 0.00220462262,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Weight_Kilograms",
+        "multiplier": 2.20462262,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   },
   {
     "category": "UnitGroup_Area",
@@ -277,54 +277,54 @@
     "sort": 7,
     "slug": "area",
     "units": [
-        {
-          "resourceName": "Units_Area_SqInch",
-          "multiplier": 1,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_SqFeet",
-          "multiplier": 144,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_SqYard",
-          "multiplier": 1296,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_Acre",
-          "multiplier": 6272640,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_SqMile",
-          "multiplier": 4014489600,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_SqMilimeter",
-          "multiplier": 0.001550003095,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_SqCentimeter",
-          "multiplier": 0.155000309527,
-          "offset": 0,
-          "formulaInvert": false
-        },
-        {
-          "resourceName": "Units_Area_SqMeter",
-          "multiplier": 1550.00309526939,
-          "offset": 0,
-          "formulaInvert": false
-        }
-      ]
+      {
+        "resourceName": "Units_Area_SqInch",
+        "multiplier": 1,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_SqFeet",
+        "multiplier": 144,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_SqYard",
+        "multiplier": 1296,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_Acre",
+        "multiplier": 6272640,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_SqMile",
+        "multiplier": 4014489600,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_SqMilimeter",
+        "multiplier": 0.001550003095,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_SqCentimeter",
+        "multiplier": 0.155000309527,
+        "offset": 0,
+        "formulaInvert": false
+      },
+      {
+        "resourceName": "Units_Area_SqMeter",
+        "multiplier": 1550.00309526939,
+        "offset": 0,
+        "formulaInvert": false
+      }
+    ]
   }
 ]
