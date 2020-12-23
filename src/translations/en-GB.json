@@ -1,7 +1,7 @@
 {
     "App_Title": "Unit Converter",
     "App_SubTitle": "Convert values from one unit of measure to another.",
-    "Header_Conversions":"Conversions",
+    "Header_Conversions":"conversions",
     "Lang_English":"English",
     "Lang_Spanish":"Spanish (Español)",
     "Convert_Value":"Value",

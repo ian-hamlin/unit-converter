@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
@@ -23,7 +23,13 @@ const ConversionDisplay = (props: any) => {
   const { match } = props;
   const detail = ConversionDetail(match.params.id);
 
-  if (detail === null) {
+  // Default the "from" to the first element.
+  const [fromUnit, setFromUnit] = useState<string>(detail?.units[0].resourceName ?? "");
+
+  // Default the "to" to the first element that is not the "from" element. Assumes we always have 2=>
+  const [toUnit, setToUnit] = useState<string>(detail?.units.filter((unit) => unit.resourceName !== fromUnit)[0].resourceName ?? "");
+
+  if (detail === null || detail.units.length <= 1) {
     return (
       <>
         <Helmet>
@@ -43,7 +49,7 @@ const ConversionDisplay = (props: any) => {
       </Helmet>
       <Row>
         <Col className="text-center">
-        <h3>{t(detail.category)}</h3>
+        <h3>{t(detail.category)} {t("Header_Conversions")}</h3>
         </Col>
       </Row>            
       <Row xs="1" sm="1" md="3" lg="3">
@@ -52,9 +58,9 @@ const ConversionDisplay = (props: any) => {
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_From")}</InputGroup.Text>
             </InputGroup.Prepend>
-<Form.Control as="select" custom>
+<Form.Control as="select" custom defaultValue={fromUnit} onChange={(e) => setFromUnit(e.currentTarget.value)}>
       {detail.units.map((unit) => (
-        <option value={unit.resourceName}>{t(unit.resourceName)}</option>
+        <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
       ))}
     </Form.Control>
           </InputGroup>
@@ -65,9 +71,9 @@ const ConversionDisplay = (props: any) => {
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_To")}</InputGroup.Text>
             </InputGroup.Prepend>
-<Form.Control as="select" custom>
+<Form.Control as="select" custom defaultValue={toUnit} onChange={(e) => setToUnit(e.currentTarget.value)}>
       {detail.units.map((unit) => (
-        <option value={unit.resourceName}>{t(unit.resourceName)}</option>
+        <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
       ))}
     </Form.Control>
           </InputGroup>
