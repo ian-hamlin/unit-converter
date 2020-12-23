@@ -38,18 +38,9 @@ const App = () => {
           </Route>
         </Switch>
       </Router>
-      icons by{" "}
-      <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">
-        Icons8
-      </a>
-      , source code on{" "}
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://github.com/ian-hamlin/unit-converter"
-      >
-        GitHub
-      </a>
+      <footer className="pt-5 text-muted text-center text-small">
+        <p className="mb-1">icons by <a target="_blank" rel="noopener noreferrer" href="https://icons8.com">Icons8</a>, source code on <a target="_blank" rel="noopener noreferrer" href="https://github.com/ian-hamlin/unit-converter">GitHub</a></p>
+      </footer>
     </Container>
   );
 };
