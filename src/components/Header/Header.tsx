@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory, useLocation } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
   const location = useLocation();
+  const [showHeader, setShowHeader] = useState<boolean>(true);
+
   let history = useHistory();
 
   function handleClick() {        
@@ -13,6 +15,10 @@ const Header = () => {
     }    
   }
   
+  useEffect(() => {
+    setShowHeader(location.pathname === "/");
+  }, [location.pathname]);
+
   return (
     <div className="text-center">
       <button className="btn btn-default" onClick={handleClick}>
@@ -24,8 +30,10 @@ const Header = () => {
           height="72"
         />
       </button>
-      <h2>{t("App_Title")}</h2>
-      <p className="lead">{t("App_SubTitle")}</p>
+      {showHeader ?
+      <><h2>{t("App_Title")}</h2>
+      <p className="lead">{t("App_SubTitle")}</p></>
+      : <></>}
     </div>
   );
 };
