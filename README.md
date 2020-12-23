@@ -30,8 +30,3 @@ $> npm run deploy #push to gh pages
 - typescript
 - react-bootstrap
 - react-i18next
-
-## ToDo
-
-- [ ] Not found if conversion type is wrong (go home button)
-- [ ] Conversion page
