@@ -4,8 +4,7 @@
     "icon": "/unit-converter/img/icons8-ruler-64.png",
     "sort": 1,
     "slug": "length",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Length_Inches",
           "multiplier": 0.08333333333333333,
@@ -55,15 +54,13 @@
           "formulaInvert": false
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Temp",
     "icon": "/unit-converter/img/icons8-temperature-64.png",
     "sort": 2,
     "slug": "temp",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Temp_Kelvin",
           "multiplier": 1,
@@ -83,15 +80,13 @@
           "formulaInvert": true
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Speed",
     "icon": "/unit-converter/img/icons8-speed-64.png",
     "sort": 8,
     "slug": "speed",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Speed_KilometerPerHour",
           "multiplier": 1,
@@ -105,15 +100,13 @@
           "formulaInvert": false
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Time",
     "icon": "/unit-converter/img/icons8-clock-64.png",
     "sort": 3,
     "slug": "time",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Time_Milliseconds",
           "multiplier": 0.001,
@@ -151,15 +144,13 @@
           "formulaInvert": false
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Volume",
     "icon": "/unit-converter/img/icons8-volume-64.png",
     "sort": 4,
     "slug": "volume",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Volume_Ounces",
           "multiplier": 1,
@@ -209,15 +200,13 @@
           "formulaInvert": false
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Angle",
     "icon": "/unit-converter/img/icons8-trigonometry-64.png",
     "sort": 6,
     "slug": "angle",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Angle_Degrees",
           "multiplier": 1,
@@ -231,15 +220,13 @@
           "formulaInvert": false
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Weight",
     "icon": "/unit-converter/img/icons8-weight-kg-64.png",
     "sort": 5,
     "slug": "weight",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Weight_Ounces",
           "multiplier": 0.0625,
@@ -283,15 +270,13 @@
           "formulaInvert": false
         }
       ]
-    }
   },
   {
     "category": "UnitGroup_Area",
     "icon": "/unit-converter/img/icons8-pi-64.png",
     "sort": 7,
     "slug": "area",
-    "units": {
-      "unitInformation": [
+    "units": [
         {
           "resourceName": "Units_Area_SqInch",
           "multiplier": 1,
@@ -341,6 +326,5 @@
           "formulaInvert": false
         }
       ]
-    }
   }
 ]
