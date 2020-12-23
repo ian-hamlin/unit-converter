@@ -56,6 +56,18 @@ const ConversionDisplay = (props: any) => {
         <Col>
           <InputGroup className="mb-3">
             <InputGroup.Prepend>
+              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl
+              inputMode="decimal"
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
+        </Col>
+        <Col>
+          <InputGroup className="mb-3">
+            <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_From")}</InputGroup.Text>
             </InputGroup.Prepend>
             <Form.Control as="select" custom defaultValue={sourceUnit} onChange={(e) => setSourceUnit(e.currentTarget.value)}>
@@ -75,18 +87,6 @@ const ConversionDisplay = (props: any) => {
                   <option key={unit.resourceName} value={unit.resourceName}>{t(unit.resourceName)}</option>
                 ))}
             </Form.Control>
-          </InputGroup>
-        </Col>
-        <Col>
-          <InputGroup className="mb-3">
-            <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl
-              inputMode="decimal"
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
           </InputGroup>
         </Col>
       </Row>
