@@ -91,6 +91,11 @@ const ConversionDisplay = (props: any) => {
           </InputGroup>
         </Col>
       </Row>
+      <Row>
+        <Col className="text-center">
+        <h4>{t("Convert_Result")}:</h4>
+        </Col>
+      </Row>        
     </>
   );
 };
