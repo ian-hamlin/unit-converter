@@ -60,17 +60,7 @@ const ConversionDisplay = (props: any) => {
           </InputGroup>
         </Col>
         <Col className="text-center">
-          <InputGroup className="mb-3">
-            <InputGroup.Prepend>
-              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
-            </InputGroup.Prepend>
-            <FormControl
-              aria-label="Default"
-              aria-describedby="inputGroup-sizing-default"
-            />
-          </InputGroup>
-        </Col>
-        <Col className="text-left">
+
 <InputGroup className="mb-3">
             <InputGroup.Prepend>
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_To")}</InputGroup.Text>
@@ -82,6 +72,17 @@ const ConversionDisplay = (props: any) => {
     </Form.Control>
           </InputGroup>
 
+        </Col>
+                <Col className="text-left">
+          <InputGroup className="mb-3">
+            <InputGroup.Prepend>
+              <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
+            </InputGroup.Prepend>
+            <FormControl
+              aria-label="Default"
+              aria-describedby="inputGroup-sizing-default"
+            />
+          </InputGroup>
         </Col>
       </Row>
     </>
