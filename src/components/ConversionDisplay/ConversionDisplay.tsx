@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import conversionData from "../../data/conversions_v2.json";
 import Conversion from "../../types/Conversion";
+import { convert } from "../../utils";
 import NotFound from "../NotFound/NotFound";
 
 const ConversionDetail = (id: string) => {
@@ -25,9 +26,22 @@ const ConversionDisplay = (props: any) => {
 
   // Default the "from" to the first element.
   const [sourceUnit, setSourceUnit] = useState<string>(detail?.units[0].resourceName ?? "");
-
   // Default the "to" to the first element that is not the "from" element. Assumes we always have 2=>
   const [targetUnit, setTargetUnit] = useState<string>(detail?.units.filter((unit) => unit.resourceName !== sourceUnit)[0].resourceName ?? "");
+  // Keep the amount as a string and deal with it later.
+  const [amount, setAmount] = useState<string>('');
+  // Track the current result.
+  const [conversionResult, setConversionResult] = useState<number | undefined>(undefined);
+
+  useEffect(() => {
+      let result = convert(sourceUnit, targetUnit, detail!!!, amount);
+      if (result.success) {
+        setConversionResult(result.result!!!);
+      } else {
+        setConversionResult(undefined);
+      }
+
+  }, [sourceUnit, targetUnit, amount, detail])
 
   if (detail === null || detail.units.length <= 1) {
     return (
@@ -59,6 +73,7 @@ const ConversionDisplay = (props: any) => {
               <InputGroup.Text id="inputGroup-sizing-default">{t("Convert_Value")}</InputGroup.Text>
             </InputGroup.Prepend>
             <FormControl
+              onChange={(e) => setAmount(e.currentTarget.value)}
               inputMode="decimal"
               aria-label="Default"
               aria-describedby="inputGroup-sizing-default"
@@ -92,7 +107,7 @@ const ConversionDisplay = (props: any) => {
       </Row>
       <Row>
         <Col className="text-center">
-          <h4>{t("Convert_Result")}:</h4>
+          <h4>{t("Convert_Result")}:{" "}{conversionResult ? conversionResult : ''}</h4>
         </Col>
       </Row>        
     </>

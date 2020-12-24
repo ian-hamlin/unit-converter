@@ -13,4 +13,9 @@ export interface Unit {
   formulaInvert: boolean;
 }
 
+export interface ConversionResult  {
+  success: boolean;
+  result?: number;
+}
+
 export default Conversion;
