@@ -42,7 +42,7 @@ const ConversionDisplay = (props: any) => {
       }
 
   }, [sourceUnit, targetUnit, amount, detail])
-
+  
   if (detail === null || detail.units.length <= 1) {
     return (
       <>
